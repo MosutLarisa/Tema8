@@ -13,7 +13,7 @@ public class Warehouse {
 	    boolean productExists = false;
 	    for (Product p : products) {
 	        if (p.getCode() == product.getCode()) {
-	            p.updateQuantity(product.getQuantity());
+	            p.updateQuantity(product.getQuantity()+1);
 	            productExists = true;
 	            break;
 	        }
